@@ -1,4 +1,4 @@
-<h1>Flashcards application. Sample Spring + next.js + mongoDB</h1>
+<h1>Flashcards application. Sample Spring + next.js + Material-UI + mongoDB</h1>
 Flashcard app, with Google Translate integration.
 
 <h2>Working demo</h2>
@@ -10,19 +10,19 @@ You can login to this app using your google account.
 Few steps described below are required to install app locally. 
 
 <h3>1. Create google application</h3>
-You need `client-id` and `client-secret` .
+You need ```client-id``` and ```client-secret``` .
 Here is instruction how to create and configure Google App:
 https://developers.google.com/google-ads/api/docs/oauth/cloud-project
 
 <h3>2. Run docker</h3>
-run `docker-compose up`
+run ```docker-compose up```
 
 <h3>3. Run spring app</h3>
-in `./src/main/resources/application.yml` paste your `client-id` and `client-secret`
+in ```./src/main/resources/application.yml``` paste your ```client-id``` and ```client-secret```
 
 then run
 
-`./mvnw spring-boot:run`
+```./mvnw spring-boot:run```
 
 <h4>If you dont have java installed locally</h4>
 In case you don't have java installed locally, first install java:
@@ -32,9 +32,9 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
 <h3>client</h3>
-go to client folder `cd ./client`
+go to client folder ```cd ./client```
 
-In file `next.config.js` assign your `client-id` to const `GOOGLE_ID`
+In file ```next.config.js``` assign your ```client-id``` to const ```GOOGLE_ID```
 
 Then run:
 
