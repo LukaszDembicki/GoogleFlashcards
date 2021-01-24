@@ -1,0 +1,112 @@
+#header {
+    background-color: #4686a0;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("../public/image/landing-page/overlay2.png"),
+    url("../public/image/landing-page/overlay3.svg"),
+    linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2
+    );
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    overflow: hidden;
+    position: relative;
+    /*padding: 20em 0 20em 0;*/
+    padding: 2em 1em 2em 1em;
+    text-align: center;
+    height: 80vh;
+    min-width: 250px;
+}
+
+#inner {
+    position: relative;
+    top: 8vh;
+}
+
+#loginButton {
+    border: 1px solid white;
+    background: none;
+    color: #d2e0e8;
+    cursor: pointer;
+    max-width: 200px;
+    text-align: center;
+    margin: 40px auto auto auto;
+    padding: 12px 12px;
+}
+
+#loginButton:hover {
+    background: #d2e0e9;
+    color: #393939;
+    transition: 0.4s;
+}
+
+#flashcardsSection {
+    padding: 5em;
+    text-align: center;
+}
+
+#footer {
+    padding: 6em 0 6em 0;
+    background-color: #4686a0;
+    color: #d5d5d5;
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("../public/image/landing-page/overlay2.png"), url("../public/image/landing-page/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    text-align: center;
+}
+
+#sectionOnMobile {
+    align-items: center;
+    background: #fafeff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding: 65px 5px;
+}
+
+#imageOnMobile {
+    transition: 1s;
+    max-height: 700px;
+}
+
+@media(max-width: 1650px) {
+    #imageOnMobile {
+        max-height: 500px;
+    }
+}
+
+@media(max-width: 1200px) {
+    #imageOnMobile {
+        max-height: 400px;
+    }
+}
+
+@media(max-width: 1000px) {
+    #sectionOnMobile {
+        align-items: center;
+        background: #fafeff;
+        display: grid;
+        grid-template-columns: none;
+        text-align: center;
+        /*padding: 65px 5px;*/
+    }
+
+    #sectionOnMobile > .sectionLeftRight {
+        padding: 50px 5px;
+        overflow: hidden;
+    }
+
+    #imageOnMobile {
+        max-height: 400px;
+        max-width: 100%;
+    }
+
+    #sectionLeft {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #sectionRight {
+
+    }
+}

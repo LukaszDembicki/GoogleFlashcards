@@ -1,0 +1,21 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27021:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: yourPassword
+    networks:
+      - google-flashcard
+    volumes:
+      - ./data:/data/db
+
+networks:
+  google-flashcard:
+    driver: bridge
+
+volumes:
+  databaseData:
