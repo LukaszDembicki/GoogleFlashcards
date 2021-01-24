@@ -32,6 +32,7 @@ then run
 
 <h4>If you dont have java installed locally</h4>
 In case you don't have java installed locally, first install java:
+
 ```
 sudo apt-get install openjdk-11-jdk
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
